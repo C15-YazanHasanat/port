@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./../styles/Contact.css";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons";
 
 const Contact = () => {
   const contacts = [
