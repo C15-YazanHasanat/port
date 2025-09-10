@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #111;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  scroll-margin-top: 70px; /* لتجنب اختفاء الأقسام خلف Navbar عند الانتقال */
+}

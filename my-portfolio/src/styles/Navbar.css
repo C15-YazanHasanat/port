@@ -1,0 +1,84 @@
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 15, 15, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+
+  /* الخلفية المتدرجة */
+  background: linear-gradient(45deg, #00d4ff, #ff4d6d, #7f5af0);
+
+  /* نحدد أن الخلفية تُطبق على النص فقط */
+  -webkit-background-clip: text; /* لمتصفحات WebKit */
+  background-clip: text; /* الخاصية القياسية للمتصفحات الأخرى */
+
+  /* لجعل النص شفاف ويظهر Gradient فقط */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* لتحريك التدرج إذا أردت */
+  background-size: 200% 200%;
+  animation: gradientFlow 5s ease infinite;
+  cursor: pointer;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #00d4ff;
+  transform: translateY(-2px);
+}
+
+/* Gradient Animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
